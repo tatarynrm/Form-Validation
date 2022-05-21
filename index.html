@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form id="form1" name="form1">
+        <h1 class="form__title">Please sign Up</h1>
+        <div class="form-group">
+            <input class="form__input form-control" type="text" id="firstName" placeholder=" ">
+            <label class="labell">First name</label>
+            <i class="fas fa-check is-valid"></i>
+            <i class="fas fa-times"></i>
+            <small class="small"> </small>
+        </div>
+        <div class="form-group ">
+            <input class="form__input  form-control" type="text" id="lastName" placeholder=" ">
+            <label class="labell">Last name</label>
+            <i class="fas fa-check"></i>
+            <i class="fas fa-times"></i>
+            <small class="small"> </small>
+
+        </div>
+        <div class="form-group">
+            <input class="form__input form-control" type="text" id="email" placeholder=" ">
+            <label class="labell">Email address</label>
+            <i class="fas fa-check"></i>
+            <i class="fas fa-times"></i>
+            <small class="small"></small>
+        </div>
+        <div class="form-group">
+            <input class="form__input form-control" type="tel" id="phone" placeholder=" " data-mask="phone">
+            <label class="labell">Phone number</label>
+            <i class="fas fa-check"></i>
+            <i class="fas fa-times"></i>
+            <small class="small"></small>
+        </div>
+        <div class="form-group">
+            <input class="form__input form-control" type="password" id="pass" placeholder=" ">
+            <label class="labell">Password</label>
+            <i class="fas fa-check"></i>
+            <i class="fas fa-times"></i>
+            <small class="small"></small>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Sign Up" id="signUp">
+    </form>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>

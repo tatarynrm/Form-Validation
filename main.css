@@ -1,0 +1,107 @@
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        height: 100vh;
+    }
+    
+    input {
+        width: 80%;
+        height: 50px;
+        position: relative;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    
+    #form1 {
+        width: 40%;
+        margin: 0 auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .form-group {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    
+    label {
+        position: absolute;
+        pointer-events: none;
+        left: 10px;
+        top: 15px;
+        transition: .4s ease;
+    }
+    
+    .form__input:focus~.labell,
+    .form__input:not(:placeholder-shown).form__input:not(:focus)~.labell {
+        top: 1px;
+        font-size: 11px;
+        color: grey;
+    }
+    
+    .form__input.error {
+        outline: 3px solid red;
+    }
+    
+    .form__input.complete {
+        outline: 3px solid green;
+    }
+    
+    .fa-check {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: green;
+        display: none;
+    }
+    
+    .fa-times {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: red;
+        display: none;
+    }
+    
+    .form-group .small {
+        position: absolute;
+        left: 0;
+        color: white;
+        background-color: rgb(218, 68, 68);
+        font-size: 20px;
+        margin-top: 2px;
+        border-radius: 5px;
+        visibility: hidden;
+    }
+    
+    .form-group.complete input {
+        border: 3px solid green;
+    }
+    
+    .form-group.complete .fa-check {
+        display: block;
+    }
+    
+    .form-group.error input {
+        border: 3px solid red;
+    }
+    
+    .form-group.error .fa-times {
+        display: block;
+    }
+    
+    .form-group.error .small {
+        visibility: visible;
+    }
